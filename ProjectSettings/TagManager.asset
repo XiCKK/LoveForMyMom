@@ -10,6 +10,8 @@ TagManager:
   - Spawnpoint
   - Projectile
   - Ladder
+  - Box
+  - FloorButton
   layers:
   - Default
   - TransparentFX
