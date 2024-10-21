@@ -12,16 +12,19 @@ public class UIManager : MonoBehaviour
 
     [Header("Pause")]
     [SerializeField]
-    private GameObject pauseScreen;
+    GameObject pauseScreen;
 
     private int currentSceneIndex;
-    #region Menu
     private void Awake()
     {
         pauseScreen.SetActive(false);
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             //if pause screen already active = unpause 
@@ -42,7 +45,7 @@ public class UIManager : MonoBehaviour
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("SavedScene", currentSceneIndex);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
     public void ExitGame()
     {
@@ -83,7 +86,7 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    #endregion
 }

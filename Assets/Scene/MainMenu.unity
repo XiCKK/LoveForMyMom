@@ -342,7 +342,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1767791485}
+      - m_Target: {fileID: 2101154756}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 263304105}
   - component: {fileID: 263304104}
   m_Layer: 5
-  m_Name: GameName
+  m_Name: LOVE FOR MY MOM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WELCOME TO XIRST
+  m_text: LOVE FOR MY MOM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -839,7 +839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -335.99997}
+  m_AnchoredPosition: {x: 0, y: -369}
   m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496582091
@@ -1284,7 +1284,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ESC IN GAME TO SETTINGS
+  m_text: "PRESS ESC IN GAME TO SETTINGS\nIF YOU CLICK PLAY, CONTINUE IN MENU OR
+    CLICK RESET IN GAME MENU PLEASE \n- PRESS ESC TWICE AND IT WILL GO BACK TO NORMAL"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -1347,7 +1348,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -23.146273, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1418,18 +1419,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'ACTIONS :
-
-    W = JUMP  !! HOLD W TO JUMP HIGHER !!
-
-    A = MOVE LEFT
-
-    D
-    = MOVE RIGHT
-
-    SPACE BAR = SHOOT PROJECTTILE
-
-'
+  m_text: "ACTIONS :\nW = JUMP  \n!! HOLD W TO JUMP HIGHER !!\nA = MOVE LEFT\nD =
+    MOVE RIGHT\nR = RESET"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -1589,7 +1580,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1767791485}
+      - m_Target: {fileID: 2101154756}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: Continue
         m_Mode: 1
@@ -1856,7 +1847,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1767791485}
+      - m_Target: {fileID: 2101154756}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -1915,7 +1906,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1767791484}
-  - component: {fileID: 1767791485}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1937,24 +1927,12 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 263304103}
-  - {fileID: 1508533616}
   - {fileID: 1697384075}
+  - {fileID: 1508533616}
   - {fileID: 782795797}
   - {fileID: 224855078}
   m_Father: {fileID: 2101154755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1767791485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767791483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d58795478d1d1944bb138952439b0ac2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1821967093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,6 +2260,7 @@ GameObject:
   - component: {fileID: 2101154754}
   - component: {fileID: 2101154753}
   - component: {fileID: 2101154752}
+  - component: {fileID: 2101154756}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2374,6 +2353,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2101154756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101154751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58795478d1d1944bb138952439b0ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

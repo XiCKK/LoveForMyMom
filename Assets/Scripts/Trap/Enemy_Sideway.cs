@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Enemy_Sideway : MonoBehaviour
@@ -7,8 +8,6 @@ public class Enemy_Sideway : MonoBehaviour
     private float movementDistance;
     [SerializeField]
     private float speed;
-    [SerializeField]
-    private float damage;
     private bool movingLeft;
     private float leftEdge;
     private float rightEdge;
@@ -49,7 +48,7 @@ public class Enemy_Sideway : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<Health>().TakeDamage(damage);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

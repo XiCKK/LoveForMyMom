@@ -8,10 +8,13 @@ TagManager:
   - Wall
   - Enemy
   - Spawnpoint
-  - Projectile
   - Ladder
   - Box
-  - FloorButton
+  - PosionWater
+  - SceneChange
+  - GameManager
+  - Switch
+  - PlatformClose
   layers:
   - Default
   - TransparentFX
@@ -60,4 +63,10 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2727461149
+    locked: 0
+  - name: Log
+    uniqueID: 3987595257
+    locked: 0
+  - name: Player2
+    uniqueID: 440258933
     locked: 0

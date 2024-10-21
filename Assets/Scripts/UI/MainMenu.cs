@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
     private int sceneToContinue;
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadSceneAsync(1);
     }
 
     public void Continue()
@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
         sceneToContinue = PlayerPrefs.GetInt("SavedScene");
         if (sceneToContinue != 0)
         {
-            SceneManager.LoadScene(sceneToContinue);
+            SceneManager.LoadSceneAsync(sceneToContinue);
         }
         else
         {
@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
     }
     public void GoToSettings()
     {
-        SceneManager.LoadScene("SettingMenu");
+        SceneManager.LoadScene("SettingsMenu");
     }
     public void GoToMainMenu()
     {

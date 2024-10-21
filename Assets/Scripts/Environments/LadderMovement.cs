@@ -2,20 +2,25 @@ using UnityEngine;
 
 public class LadderMovement : MonoBehaviour
 {
-    private float vertical;
-    private float speed = 8f;
+    private float verticalInput;
+    [SerializeField]
+    private float speed = 4f;
     private bool isLadder;
-    private bool isClimbing;
+    public bool isClimbing;
+    private Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
-
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
     void Update()
     {
-        vertical = Input.GetAxisRaw("Vertical");
-
-        if (isLadder && Mathf.Abs(vertical) > 0f)
+        verticalInput = Input.GetAxisRaw("Vertical");
+        if (isLadder && Mathf.Abs(verticalInput) >= 0f)
         {
             isClimbing = true;
+            anim.SetTrigger("Climbing");
         }
     }
 
@@ -24,7 +29,7 @@ public class LadderMovement : MonoBehaviour
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+            rb.velocity = new Vector2(rb.velocity.x, verticalInput * speed);
         }
         else
         {

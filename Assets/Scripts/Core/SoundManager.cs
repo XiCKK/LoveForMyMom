@@ -29,6 +29,15 @@ public class SoundManager : MonoBehaviour
         soundSource.PlayOneShot(_sound);
     }
 
+    public void PlaySound2(AudioClip _sound)
+    {
+        soundSource.Play();
+    }
+    public void StopSound(AudioClip _sound)
+    {
+        soundSource.Stop();
+    }
+
     public void ChangeSoundVolume(float _change)
     {
         ChangeSourceVolume(1, "soundVolume", _change, soundSource);
